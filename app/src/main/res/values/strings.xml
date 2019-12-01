@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Employee Control</string>
+
+    <string name="text_view_iniciar_sesion">Iniciar Sesión</string>
+    <string name="button_ingresar">Ingresar</string>
+    <string name="button_registrarse">Registrarse</string>
+    <string name="edit_text_email">Email</string>
+    <string name="edit_text_contrasena">Contraseña</string>
+    <string name="text_view_titulo">Employee Control</string>
+    <string name="image_view_logo">Logo</string>
 </resources>
