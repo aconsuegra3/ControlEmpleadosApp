@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "407438192465",
+    "firebase_url": "https://control-de-empleados-762ed.firebaseio.com",
+    "project_id": "control-de-empleados-762ed",
+    "storage_bucket": "control-de-empleados-762ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407438192465:android:abfbd6e54b851695ffed70",
+        "android_client_info": {
+          "package_name": "com.consuegra.wolftech.employeecontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407438192465-5hil0s3cpk0nrqu47pnalcf0fusf1vc3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.consuegra.wolftech.employeecontrol",
+            "certificate_hash": "64b18569e8df604f065c087087652947fbd09f46"
+          }
+        },
+        {
+          "client_id": "407438192465-a3fidoqo41ckllro37tiumegsthhkdni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRrD1RlmOstzYxuI7RJ5AF_IllfkJilN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407438192465-a3fidoqo41ckllro37tiumegsthhkdni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
