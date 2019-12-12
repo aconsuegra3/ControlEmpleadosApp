@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnIngresar = findViewById(R.id.btnIngresar)
-        txtCorreo = findViewById(R.id.txtCorreo)
+        txtCorreo = findViewById(R.id.txtTelefono)
         txtContrasena = findViewById(R.id.txtContrasena)
         progressBar = findViewById(R.id.progressBarLogin)
         auth = FirebaseAuth.getInstance()
