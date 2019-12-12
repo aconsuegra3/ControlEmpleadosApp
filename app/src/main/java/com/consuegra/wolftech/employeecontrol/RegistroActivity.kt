@@ -30,7 +30,7 @@ class RegistroActivity : AppCompatActivity() {
 
         txtNombre=findViewById(R.id.txtNombre)
         txtApellido=findViewById(R.id.txtApellido)
-        txtCorreo=findViewById(R.id.txtTelefono)
+        txtCorreo=findViewById(R.id.txtCorreo)
         txtContrasena=findViewById(R.id.txtContrasena)
 
         progressBar = findViewById(R.id.progressBar)

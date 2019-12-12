@@ -53,12 +53,8 @@ class InicioActivity : AppCompatActivity() {
             }
             swipeRefreshLayout.isRefreshing = false
 
-            /*
-            // Agregar un nuevo platillo
-            platillos.add(Platillo("Platillo 11", 400.00, 5.0, R.drawable.platillo06))
-            // Decirle al adapter que la información ha cambiado
             adapter.notifyDataSetChanged()
-            */
+
         }
 
 

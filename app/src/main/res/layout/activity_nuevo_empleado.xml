@@ -116,6 +116,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
             android:text="@string/button_guardar"
+            android:onClick="guardar"
             android:layout_width="150dp"
             android:layout_height="wrap_content" android:layout_marginTop="20dp" android:id="@+id/btnGuardar"
             android:layout_gravity="center"

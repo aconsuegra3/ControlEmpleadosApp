@@ -28,6 +28,7 @@ class AdapterCustom(var context: Context, var items: ArrayList<Empleado>, var cl
         holder.apellido.text = item.apellido
         holder.telefono.text = item.telefono
         holder.cargo.text = item.cargo
+        holder.correo.text = item.correo
         holder.foto.setImageResource(item.foto)
     }
 
@@ -48,6 +49,7 @@ class AdapterCustom(var context: Context, var items: ArrayList<Empleado>, var cl
         var apellido: TextView
         var telefono: TextView
         var cargo: TextView
+        var correo: TextView
 
         var foto: ImageView
 
@@ -56,6 +58,7 @@ class AdapterCustom(var context: Context, var items: ArrayList<Empleado>, var cl
             this.apellido = view.findViewById(R.id.textViewApellido)
             this.telefono = view.findViewById(R.id.textViewTelefono)
             this.cargo = view.findViewById(R.id.textViewCargo)
+            this.correo = view.findViewById(R.id.textViewCorreo)
             this.foto = view.findViewById(R.id.imageViewEmpleado)
 
             view.setOnClickListener(this)
