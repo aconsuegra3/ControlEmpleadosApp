@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Employee Control</string>
+
+    <string name="text_view_iniciar_sesion">Iniciar Sesión</string>
+    <string name="button_ingresar">Ingresar</string>
+    <string name="button_registrarse">Registrarse</string>
+    <string name="edit_text_email">Correo electrónico</string>
+    <string name="edit_text_contrasena">Contraseña</string>
+    <string name="text_view_titulo">Employee Control</string>
+    <string name="image_view_logo">Logo</string>
+    <string name="edit_text_nombre">Nombre</string>
+    <string name="edit_text_Apellido">Apellido</string>
+    <string name="edit_text_identidad">No. Identidad</string>
+    <string name="edit_text_telefono">No. Teléfono</string>
+    <string name="text_view_guardar_empleado">Ingrese los datos del empleado a agregar:</string>
+    <string name="radio_button_gerente">Gerente</string>
+    <string name="radio_button_secretario">Secretario/a</string>
+    <string name="radio_button_otro">Otro</string>
+    <string name="text_view_cargo">Cargo:</string>
+    <string name="button_guardar">Guardar</string>
+    <string name="image_button_foto">Foto</string>
+    <string name="text_view_foto">Agregue una foto del empleado</string>
+    <string name="agregar_empleado">Agregar Empleado</string>
+    <string name="listar_empleado">Listar Empleados</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="salir">Salir</string>
+    <string name="bienvenido">Bienvenido a Employee Control</string>
 </resources>
