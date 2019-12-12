@@ -1,15 +1,18 @@
 package com.consuegra.wolftech.employeecontrol
 
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.view.KeyEvent
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.RadioButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.consuegra.wolftech.employeecontrol.InicioActivity
 import java.util.*
@@ -65,7 +68,22 @@ class NuevoEmpleadoActivity : AppCompatActivity() {
 
         empleados.add(Empleado(nombre, apellido, identidad, correo, telefono, cargo ,R.drawable.imagenpordefecto))
 
-        startActivity(Intent(this, InicioActivity::class.java))
+        startActivity(Intent(this, IndexActivity::class.java))
         finish()
+    }
+    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Descartar")
+            builder.setMessage("¿Está seguro que desea salir? su información se perderá")
+            builder.setPositiveButton("Si") { _: DialogInterface, _: Int ->
+                finish()
+            }
+            builder.setNegativeButton("No") { _: DialogInterface, _: Int ->
+
+            }
+            builder.show()
+        }
+        return super.onKeyDown(keyCode, event)
     }
 }

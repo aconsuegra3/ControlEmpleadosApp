@@ -27,8 +27,8 @@ class InicioActivity : AppCompatActivity() {
 
         empleados.add(Empleado("Oscar", "Perez", "0318-1998-09213", "oscar@gmail.com", "9843-1254", "Gerente" ,R.drawable.imagenpordefecto))
         empleados.add(Empleado("Juan", "Lopez", "0318-1999-00121", "juan@gmail.com", "3312-1356", "Gerente" ,R.drawable.imagenpordefecto))
-        empleados.add(Empleado("Luis", "Rivera", "0318-2005-00092", "lucho@gmail.com", "8752-1123", "Gerente" ,R.drawable.imagenpordefecto))
-        empleados.add(Empleado("Ana", "Zelaya", "0318-2000-00111", "ana@gmail.com", "9921-3244", "Gerente" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Luis", "Rivera", "0318-2005-00092", "lucho@gmail.com", "8752-1123", "Otro" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Ana", "Zelaya", "0318-2000-00111", "ana@gmail.com", "9921-3244", "Secretaria" ,R.drawable.imagenpordefecto))
 
         layoutManager = LinearLayoutManager(this)
 
@@ -60,7 +60,6 @@ class InicioActivity : AppCompatActivity() {
 
         // Swipe to refresh
         swipeRefreshLayout.setOnRefreshListener {
-            Log.d("REFRESH", "La información se ha refrescado")
 
             for (i in 1..100000000) {
 
@@ -70,22 +69,5 @@ class InicioActivity : AppCompatActivity() {
             adapter.notifyDataSetChanged()
 
         }
-
-
-    }
-    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("Salir")
-            builder.setMessage("¿Está seguro que desea salir?")
-            builder.setPositiveButton("Si") { _: DialogInterface, _: Int ->
-                finish()
-            }
-            builder.setNegativeButton("No") { _: DialogInterface, _: Int ->
-
-            }
-            builder.show()
-        }
-        return super.onKeyDown(keyCode, event)
     }
 }
