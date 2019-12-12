@@ -20,4 +20,9 @@
     <string name="button_guardar">Guardar</string>
     <string name="image_button_foto">Foto</string>
     <string name="text_view_foto">Agregue una foto del empleado</string>
+    <string name="agregar_empleado">Agregar Empleado</string>
+    <string name="listar_empleado">Listar Empleados</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="salir">Salir</string>
+    <string name="bienvenido">Bienvenido a Employee Control</string>
 </resources>

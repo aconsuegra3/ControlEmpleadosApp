@@ -11,9 +11,7 @@ import android.widget.ImageButton
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.io.File
-import java.io.IOException
-import java.text.SimpleDateFormat
+import com.consuegra.wolftech.employeecontrol.InicioActivity
 import java.util.*
 
 class NuevoEmpleadoActivity : AppCompatActivity() {
@@ -64,7 +62,6 @@ class NuevoEmpleadoActivity : AppCompatActivity() {
         }else if(rb3.isChecked){
             cargo="Otro"
         }
-        val empleados = ArrayList<Empleado>()
 
         empleados.add(Empleado(nombre, apellido, identidad, correo, telefono, cargo ,R.drawable.imagenpordefecto))
 

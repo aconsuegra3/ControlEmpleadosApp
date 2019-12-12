@@ -74,6 +74,7 @@ class RegistroActivity : AppCompatActivity() {
 
     private fun action() {
         startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 
     private fun verifyEmail(user:FirebaseUser?){
@@ -82,9 +83,9 @@ class RegistroActivity : AppCompatActivity() {
                 task ->
 
                 if(task.isComplete){
-                    Toast.makeText(this, "Email Enviado", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Cuenta ereada con éxito", Toast.LENGTH_LONG).show()
                 }else{
-                    Toast.makeText(this, "Error en Email", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Error al vincular. Intente nuevamente", Toast.LENGTH_LONG).show()
                 }
             }
     }

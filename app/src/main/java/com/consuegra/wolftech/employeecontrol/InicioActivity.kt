@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_inicio.*
 
+val empleados = ArrayList<Empleado>()
+
 class InicioActivity : AppCompatActivity() {
 
     private lateinit var layoutManager: RecyclerView.LayoutManager
@@ -21,10 +23,12 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-        val empleados = ArrayList<Empleado>()
+        //val empleados = ArrayList<Empleado>()
 
-        empleados.add(Empleado("Oscar", "Perez", "0318-1998-09213", "oscar@gmail.com", "98431254", "Gerente" ,R.drawable.imagenpordefecto))
-        empleados.add(Empleado("Juan", "Lopez", "0318-1982-01442", "juan@gmail.com", "98431254", "Gerente" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Oscar", "Perez", "0318-1998-09213", "oscar@gmail.com", "9843-1254", "Gerente" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Juan", "Lopez", "0318-1999-00121", "juan@gmail.com", "3312-1356", "Gerente" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Luis", "Rivera", "0318-2005-00092", "lucho@gmail.com", "8752-1123", "Gerente" ,R.drawable.imagenpordefecto))
+        empleados.add(Empleado("Ana", "Zelaya", "0318-2000-00111", "ana@gmail.com", "9921-3244", "Gerente" ,R.drawable.imagenpordefecto))
 
         layoutManager = LinearLayoutManager(this)
 
@@ -34,7 +38,17 @@ class InicioActivity : AppCompatActivity() {
             }
         }, object: LongClickListener{
             override fun LongClickListener(view: View, index: Int) {
-                Log.d("LONGCLICK", empleados[index].nombre)
+                val builder = AlertDialog.Builder(this@InicioActivity)
+                builder.setTitle("Eliminar")
+                builder.setMessage("¿Está seguro que desea eliminar el empleado ${empleados[index].nombre}")
+                builder.setPositiveButton("Si") { _: DialogInterface, _: Int ->
+                    empleados.remove(empleados[index])
+                    Toast.makeText(this@InicioActivity, "Empleado elminado correctamente", Toast.LENGTH_LONG).show()
+                }
+                builder.setNegativeButton("No"){_: DialogInterface, _: Int ->
+
+                }
+                builder.show()
             }
         })
 
