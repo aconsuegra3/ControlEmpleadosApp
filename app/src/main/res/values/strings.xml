@@ -12,11 +12,11 @@
     <string name="edit_text_Apellido">Apellido</string>
     <string name="edit_text_identidad">No. Identidad</string>
     <string name="edit_text_telefono">No. Teléfono</string>
-    <string name="text_view_guardar_empleado">Ingrese los datos del empleado a agregar: </string>
+    <string name="text_view_guardar_empleado">Ingrese los datos del empleado a agregar:</string>
     <string name="radio_button_gerente">Gerente</string>
     <string name="radio_button_secretario">Secretario/a</string>
     <string name="radio_button_otro">Otro</string>
-    <string name="text_view_cargo">Cargo: </string>
+    <string name="text_view_cargo">Cargo:</string>
     <string name="button_guardar">Guardar</string>
     <string name="image_button_foto">Foto</string>
     <string name="text_view_foto">Agregue una foto del empleado</string>

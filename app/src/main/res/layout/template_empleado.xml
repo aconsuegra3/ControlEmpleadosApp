@@ -33,7 +33,7 @@
                 android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.25"
                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="1.0" android:layout_marginTop="8dp"/>
+                app:layout_constraintVertical_bias="1.0" android:layout_marginTop="8dp" android:textSize="30sp"/>
         <TextView
                 android:text="@string/edit_text_nombre"
                 android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageViewEmpleado"
                 android:layout_marginStart="28dp" android:layout_marginLeft="28dp" android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
-                app:layout_constraintHorizontal_bias="0.132"/>
+                app:layout_constraintHorizontal_bias="0.132" android:textSize="30sp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout

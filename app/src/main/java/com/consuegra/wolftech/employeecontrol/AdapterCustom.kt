@@ -27,6 +27,7 @@ class AdapterCustom(var context: Context, var items: ArrayList<Empleado>, var cl
         holder.nombre.text = item.nombre
         holder.apellido.text = item.apellido
         holder.telefono.text = item.telefono
+        holder.cargo.text = item.cargo
         holder.foto.setImageResource(item.foto)
     }
 
